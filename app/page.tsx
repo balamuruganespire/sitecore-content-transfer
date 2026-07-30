@@ -135,7 +135,7 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
   const [warnings, setWarnings] = useState<string[]>([]);
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   // Theme: default light, remembered across visits.
   useEffect(() => {
@@ -276,7 +276,7 @@ export default function Home() {
     <div className="container">
       <header className="app">
         <div className="logo">CC</div>
-        <h1>Sitecore Content Transfer</h1>
+        <h1>Content Transfer</h1>
         {/* <span className="beta">BETA</span> */}
         <div className="theme-toggle" role="group" aria-label="Theme">
           <button
@@ -294,8 +294,8 @@ export default function Home() {
         </div>
       </header>
       <p className="tagline">
-        You pick it. We move it. — Transfer content between SitecoreAI
-        environments with the Content Transfer &amp; Item Transfer APIs.
+        You pick it. We move it. — Transfer content between environments,
+        package to package.
       </p>
       {/* <div className="beta-note">
         ⚠ Beta: this tool hasn&apos;t been tested for all scenarios yet. Try it on a lower
@@ -307,9 +307,9 @@ export default function Home() {
           <span className="stepnum">1</span> Environments
         </h2>
         <p className="hint">
-          OAuth client credentials for each environment (created in the Sitecore
-          Cloud Portal / Deploy app). Stored in this browser tab only — never on
-          any server.
+          OAuth client credentials for each environment (created in your cloud
+          portal&apos;s admin/deploy app). Stored in this browser tab only —
+          never on any server.
         </p>
         <div className="grid2">
           <EnvFields
@@ -461,15 +461,15 @@ export default function Home() {
           </div>
         )}
         <p className="note">
-          Heads up: right after initiation, Sitecore&apos;s status endpoint can
-          transiently report &quot;not found&quot; (known issue CFW-9663).
-          Content Courier keeps polling automatically.
+          Heads up: right after initiation, the source status endpoint can
+          transiently report &quot;not found&quot; while the package is being
+          prepared. This tool keeps polling automatically.
         </p>
       </div>
 
       <footer>
-        Content Courier is an open-source interim tool while Sitecore builds its
-        official content migration app. Not affiliated with Sitecore.
+        This is an open-source interim tool for transferring content between
+        environments. Not affiliated with any vendor.
       </footer>
     </div>
   );

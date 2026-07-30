@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sitecore content transfer",
+  title: "Content transfer",
   description:
-    "Securely transfer content between SitecoreAI environments using the Content Transfer and Item Transfer APIs.",
+    "Securely transfer content between environments using the content and item transfer APIs.",
 };
 
 export default function RootLayout({
