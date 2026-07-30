@@ -275,10 +275,10 @@ export default function Home() {
   return (
     <div className="container">
       <header className="app">
-        <div className="logo">CC</div>
-        <h1>Content Transfer</h1>
+        <div className="logo">SCT</div>
+        <h1>Sitecore Content Transfer</h1>
         {/* <span className="beta">BETA</span> */}
-        <div className="theme-toggle" role="group" aria-label="Theme">
+        {/* <div className="theme-toggle" role="group" aria-label="Theme">
           <button
             className={theme === "light" ? "on" : ""}
             onClick={() => setTheme("light")}
@@ -291,7 +291,7 @@ export default function Home() {
           >
             ☾ Dark
           </button>
-        </div>
+        </div> */}
       </header>
       <p className="tagline">
         You pick it. We move it. — Transfer content between environments,
