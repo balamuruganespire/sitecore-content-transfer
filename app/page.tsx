@@ -276,7 +276,7 @@ export default function Home() {
     <div className="container">
       <header className="app">
         <div className="logo">CC</div>
-        <h1>Espire: Sitecore Content Transfer</h1>
+        <h1>Sitecore Content Transfer</h1>
         {/* <span className="beta">BETA</span> */}
         <div className="theme-toggle" role="group" aria-label="Theme">
           <button

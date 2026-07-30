@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Espire — Sitecore content transfer",
+  title: "Sitecore content transfer",
   description:
     "Securely transfer content between SitecoreAI environments using the Content Transfer and Item Transfer APIs.",
 };
