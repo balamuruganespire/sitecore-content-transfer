@@ -467,10 +467,10 @@ export default function Home() {
         </p>
       </div>
 
-      <footer>
+      {/* <footer>
         This is an open-source interim tool for transferring content between
         environments. Not affiliated with any vendor.
-      </footer>
+      </footer> */}
     </div>
   );
 }
